@@ -1,0 +1,9 @@
+db.sqlite3
+semin/__pycache__
+main/__pycache__
+home/__pycache__
+explo/__pycache__
+expe/__pycache__
+blog/__pycache__
+appui/__pycache__
+home/.env

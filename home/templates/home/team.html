@@ -1,0 +1,212 @@
+{% extends 'home/base.html' %} 
+{% load static %}
+{% block title %}
+L'équipe actuelle du SSP 
+{% endblock %}
+
+{% block styles %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+{% endblock %}
+
+
+
+
+{% block body %}
+<!-- Section: Team v.1 -->
+<section class="team-section text-center my-2">
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">L'équipe actuelle du SSP Lab</h2>
+    <!-- Section description -->
+    <p class="grey-text w-responsive mx-auto mb-5">Vous trouverez ci-après les membres actuels du SSP Lab</p>
+  
+    <div class="row row-cols-1 row-cols-md-4">
+        <!-- BYL -->
+        <div class="col mb-4">
+          <div class="card h-100 text-black bg-light mb-3">
+            <div class="avatar mx-auto">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="card-img-top rounded-circle z-depth-1" alt="Yves-Laurent Bénichou">
+              </div>
+              <h5 class="font-weight-bold mt-4 mb-3">Yves-Laurent Bénichou</h5>
+              <p class="text-uppercase blue-text"><strong>Data Scientist</strong></p>
+              <p class="grey-text">Grand manitou de l'informatique</p>
+              <ul class="list-unstyled mb-0">
+                <!-- Github -->
+                <a class="p-2 fa-lg ins-ic">
+                  <i class="fab fa-github blue-text"> </i>
+                </a>
+                <!-- Linkedin -->
+                <a class="p-2 fa-lg tw-ic">
+                  <i class="fab fa-linkedin blue-text"> </i>
+                </a>
+              </ul>
+          </div>
+        </div>
+
+        <!-- Stéphanie -->
+        <div class="col mb-4">
+          <div class="card h-100 text-black bg-light mb-3">
+            <div class="avatar mx-auto">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="card-img-top rounded-circle z-depth-1" alt="Stéphanie Himpens">
+             </div>
+             <h5 class="font-weight-bold mt-4 mb-3">Stéphanie Himpens</h5>
+             <p class="text-uppercase blue-text"><strong>Data Scientist</strong></p>
+             <p class="grey-text">Grand manitou des RNN</p>
+            <ul class="list-unstyled mb-0">
+            <!-- Github -->
+            <a class="p-2 fa-lg ins-ic">
+                <i class="fab fa-github blue-text"> </i>
+            </a>
+            <!-- Linkedin -->
+            <a class="p-2 fa-lg tw-ic">
+                <i class="fab fa-linkedin blue-text"> </i>
+            </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Jérémy -->
+        <div class="col mb-4">
+            <div class="card h-100 text-black bg-light mb-3">
+                <div class="avatar mx-auto">
+                <img src="{% static '/img/jeremy.jpg' %}" class="card-img-top rounded-circle z-depth-1" alt="Jérémy L'Hour">
+              </div>
+              <h5 class="font-weight-bold mt-4 mb-3">Jérémy L'Hour</h5>
+              <p class="text-uppercase blue-text"><strong>Data Scientist</strong></p>
+              <p class="grey-text">Ancien théoricien repenti</p>
+              <ul class="list-unstyled mb-0">
+                 <!-- Github -->
+                 <a class="p-2 fa-lg ins-ic" href = "https://git.lab.sspcloud.fr/zctxti">
+                  <i class="fab fa-github blue-text"> </i>
+                </a>
+                <!-- Linkedin -->
+                <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-l-hour-30a03937?originalSubdomain=fr">
+                  <i class="fab fa-linkedin blue-text"> </i>
+                </a>
+              </ul>
+
+
+            </div>
+        </div>
+
+        <!-- Lucas -->
+        <div class="col mb-4">
+            <div class="card h-100 text-black bg-light mb-3">
+                <div class="avatar mx-auto">
+                    <img src="{% static '/img/lucas.jpg' %}" class="card-img-top rounded-circle z-depth-1" alt="Lucas Malherbe">
+                  </div>
+                  <h5 class="font-weight-bold mt-4 mb-3">Lucas Malherbe</h5>
+                  <p class="text-uppercase blue-text"><strong>Data Scientist</strong></p>
+                  <p class="grey-text">Spécialiste en matching.</p>
+                  <ul class="list-unstyled mb-0">
+                     <!-- Github -->
+                     <a class="p-2 fa-lg ins-ic" href = "https://git.lab.sspcloud.fr/lmalherbe">
+                      <i class="fab fa-github blue-text"> </i>
+                    </a>
+                    <!-- Linkedin -->
+                    <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/lucas-malherbe-4a0a9114b/">
+                      <i class="fab fa-linkedin blue-text"> </i>
+                    </a>
+                  </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-4">
+        <!-- François -->
+        <div class="col mb-4">
+          <div class="card h-100 text-black bg-light mb-3">
+            <div class="avatar mx-auto">
+                <img src="{% static '/img/francois.jpg' %}" class="card-img-top rounded-circle z-depth-1" alt="François Semecurbe">
+              </div>
+              <h5 class="font-weight-bold mt-4 mb-3">François Semecurbe</h5>
+              <p class="text-uppercase blue-text"><strong>Géo Data Scientist</strong></p>
+              <p class="grey-text">Aime faire des cartes, mais seulement si elles sont bien faites.</p>
+              <ul class="list-unstyled mb-0">
+                 <!-- Github -->
+                 <a class="p-2 fa-lg ins-ic" href = "https://git.lab.sspcloud.fr/h529p3">
+                  <i class="fab fa-github blue-text"> </i>
+                </a>
+                <!-- Linkedin -->
+                <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/francoissemecurbe/">
+                  <i class="fab fa-linkedin blue-text"> </i>
+                </a>
+              </ul>
+
+          </div>
+        </div>
+
+        <!-- Milena -->
+        <div class="col mb-4">
+            <div class="card h-100 text-black bg-light mb-3">
+                <div class="avatar mx-auto">
+                    <img src="{% static '/img/milena.jpg' %}" class="card-img-top rounded-circle z-depth-1" alt="Milena Suarez-Castillo">
+                  </div>
+                  <h5 class="font-weight-bold mt-4 mb-3">Milena Suarez-Castillo</h5>
+                  <p class="text-uppercase blue-text"><strong>Data Scientist</strong></p>
+                  <p class="grey-text">Cherche nouvel opérateur mobile et internet.</p>
+                  <ul class="list-unstyled mb-0">
+                     <!-- Github -->
+                     <a class="p-2 fa-lg ins-ic" href = "https://git.lab.sspcloud.fr/hby7ih">
+                      <i class="fab fa-github blue-text"> </i>
+                    </a>
+                    <!-- Linkedin -->
+                    <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/milena-suarez-615099155/">
+                      <i class="fab fa-linkedin blue-text"> </i>
+                    </a>
+                  </ul>
+
+            </div>
+        </div>
+
+        <!-- Elise  -->
+        <div class="col mb-4">
+            <div class="card h-100 text-black bg-light mb-3">
+                <div class="avatar mx-auto">
+                    <img src="{% static '/img/elise.jpg' %}" class="card-img-top rounded-circle z-depth-1" alt="Elise Coudin">
+                </div>
+                <h5 class="font-weight-bold mt-4 mb-3">Elise Coudin</h5>
+                <p class="text-uppercase blue-text"><strong>Responsable du SSP Lab</strong></p>
+                <p class="grey-text"></p>
+                <ul class="list-unstyled mb-0">
+                    <!-- Linkedin -->
+                    <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/elise-coudin-1411715/">
+                    <i class="fab fa-linkedin blue-text"> </i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Aurélien  -->
+        <div class="col mb-4">
+            <div class="card h-100 text-black bg-light mb-3">
+                <div class="avatar mx-auto">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="card-img-top rounded-circle z-depth-1" alt="Aurélien Fortin">
+                  </div>
+                  <h5 class="font-weight-bold mt-4 mb-3">Aurélien Fortin</h5>
+                  <p class="text-uppercase blue-text"><strong>Responsable Adjoint du SSP Lab</strong></p>
+                  <p class="grey-text"></p>
+                  <ul class="list-unstyled mb-0">
+                     <!-- Github -->
+                     <a class="p-2 fa-lg ins-ic" href = "https://git.lab.sspcloud.fr/aurelien_fortin">
+                      <i class="fab fa-github blue-text"> </i>
+                    </a>
+                    <!-- Linkedin -->
+                    <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/aur%C3%A9lien-fortin-0a24892/">
+                      <i class="fab fa-linkedin blue-text"> </i>
+                    </a>
+                  </ul>
+            </div>
+        </div>
+
+    </div>
+
+  </section>
+
+{% endblock %}
