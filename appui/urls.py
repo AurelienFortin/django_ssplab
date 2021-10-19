@@ -3,4 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.appui, name = 'appui'),]
+    path('', views.appui, name = 'appui'),
+    path('appui/<slug:name>/', views.appui, name ='appui')]
