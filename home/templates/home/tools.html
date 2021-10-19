@@ -1,0 +1,34 @@
+{% extends 'home/base.html' %} 
+{% load static %}
+{% block title %}
+Les outils du SSP Lab{% endblock %}
+
+{% block body %}
+
+<div class = "row">
+    <div class="col-md-8 card mb-4  mt-3 left  top" disabled>
+        <div class="card-body" disabled>
+                <h1>Outils et codes</h1>
+                <p> Le SSP Lab met à disposition, dès que c'est possible, le code issu de ses expérimentations, ainsi que des outils qui peuvent etre utilisés largement au sein du SSP.
+                </p>
+                <p>
+                Pour accéder au code des principales expérimentations, les repos de référence sont situés : 
+                    <ul>
+                        <li><b>Sur le GitLab de l'Insee</b></li>
+                        <li><b>Plus rarement, sur le repo du git lab de la plateforme du datalab</b></li>
+                    </ul>
+                </p>
+                <p>
+                En termes d'outils, le SSP Lab tente de développer des API pour que les résultats des expérimentations. A ce stade, deux API sont prêtes ou en cours d'élaboration :<ul>
+                        <li>(disponible) une API qui permet, à partir du libellé d'un produit, d'obtenir sa famille classifiée. Cette API a été permise par l'exploitation de données de caisse. </li>
+                        <li>(en cours) une API qui, à partir d'un champ texte, propose un SIRET possible</li>
+
+                    </ul>
+                </p>
+        </div>
+    </div>
+    
+</div>
+
+
+    {% endblock %}
