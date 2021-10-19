@@ -5,8 +5,8 @@ from .models import AppuiR
 # Create your views here.
 
 def liste_appui(request):
-    appuimethodo = AppuiR.objects.all()
-    data = {'appui': appui}
+    appuis = AppuiR.objects.all()
+    data = {'appuis': appuis}
     return render(request, 'appui/appui.html', data)
 
 def appui(request,name):
