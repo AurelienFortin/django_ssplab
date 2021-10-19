@@ -27,6 +27,7 @@ urlpatterns = [
     path('explo/', include('explo.urls')),
     path('semin/', include('semin.urls')),
     path('appui/', include('appui.urls')),
+    path('outils/', include('outils.urls')),
     path('evenements/', evenements_view, name = 'evenements'),
     path('team/',team_view, name = "equipe"),
     path('index/',index, name = "home"),
