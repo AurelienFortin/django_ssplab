@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from home.views import index, evenements_view, team_view, pres_view, outils_view
+from home.views import index, evenements_view, team_view, pres_view, outils_view, lettres_view
 #from blog.views import blog_index
 
 urlpatterns = [
@@ -29,6 +29,7 @@ urlpatterns = [
     path('appui/', include('appui.urls')),
     path('outils/', outils_view, name = 'outils'),
     path('evenements/', evenements_view, name = 'evenements'),
+    path('lettres/', lettres_view, name = 'lettres'),
     path('team/',team_view, name = "equipe"),
     path('index/',index, name = "home"),
     path('pres/',pres_view, name = "pres"),
