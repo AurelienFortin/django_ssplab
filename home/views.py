@@ -14,5 +14,5 @@ def team_view(request):
 def pres_view(request):
     return render(request, 'home/presentation_generale.html')
 
-def tools(request):
+def page_outils(request):
     return render(request, 'home/tools.html')
