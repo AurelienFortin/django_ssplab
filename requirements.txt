@@ -1,4 +1,5 @@
-Django==3.2
+wheel
 pathlib
+Django==3.2
 python-environ
 environ
