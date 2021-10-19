@@ -11,6 +11,9 @@ def evenements_view(request):
 def team_view(request):
     return render(request, 'home/team.html')
 
+def lettres_view(request):
+    return render(request, 'home/lettres_BD.html')
+
 def pres_view(request):
     return render(request, 'home/presentation_generale.html')
 
