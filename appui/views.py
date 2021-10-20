@@ -1,13 +1,17 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from .models import AppuiR
+import datetime
 
 # Create your views here.
 
 def liste_appui(request):
-    appuis = AppuiR.objects.all()
-    data = {'appuis': appuis}
+    appuis = AppuiR.objects.all().filter(date_fin__gte = datetime.date.today())
+    anciens_appuis = AppuiR.objects.all().filter(date_fin__lt = datetime.date.today())
+
+    data = {'appuis': appuis, 'anciens_appuis': anciens_appuis}
     return render(request, 'appui/appui.html', data)
+
 
 def appui(request,name):
     try:

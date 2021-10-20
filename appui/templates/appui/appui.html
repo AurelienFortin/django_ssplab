@@ -6,6 +6,56 @@
     
     <h2 class="h1-responsive font-weight-bold my-5">Appui méthodologique du SSP Lab</h2>
   
+    <p>Les appuis méthodos.</p>
+
+    <div class="row row-cols-1 row-cols-3 g-4">
+
+            {% for appui in appuis %}
+            <div class = "col">
+                <div class="card h-100 bg-light" style = "width: 22rem; " >
+                        <img src="../static/img/{{ appui.image_titre }}" class="card-img-top w" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ appui.title }}</h2>
+                            <p class="card-text">{{appui.body|slice:":100" |safe }}</p>
+
+                        </div>
+                        <div class = "card-footer">
+
+                            <a href="/appui/appui/{{ appui.slug }}" class="btn btn-primary">Suite &rarr;</a>
+                        </div>
+                </div>
+            </div>
+            {% endfor %}
+
+
+        </div>
+
+        <h2 class="h1-responsive font-weight-bold my-5">Explorations passées du SSP Lab du SSP Lab</h2>
+
+        <div class="row row-cols-1 row-cols-3 g-4">
+
+            {% for appui in anciens_appuis %}
+            <div class = "col">
+                <div class="card h-100 bg-light" style = "width: 22rem; " >
+                        <img src="../static/img/{{ appui.image_titre }}" class="card-img-top w" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ appui.title }}</h2>
+                            <p class="card-text">{{appui.body|slice:":100" |safe }}</p>
+
+                        </div>
+                        <div class = "card-footer">
+
+                            <a href="/appui/appui/{{ appui.slug }}" class="btn btn-primary">Suite &rarr;</a>
+                        </div>
+                </div>
+            </div>
+            {% endfor %}
+
+
+        </div>
+
+
+
 </section>
 
 {% endblock %}
