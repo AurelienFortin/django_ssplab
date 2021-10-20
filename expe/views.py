@@ -10,7 +10,8 @@ def liste_expe(request):
     return render(request, 'expe/expe.html', data)
 
 def anciennes_expe(request):
-    anciennes_experimentations = ExpeR.objects.filter(date_fin<LocalDate.now())
+    anciennes_experimentations = ExpeR.objects.all()
+    # filter(date_fin<LocalDate.now())
     data = {'anciennes_experimentations': anciennes_experimentations}
     return render(request, 'expe/expe.html', data)    
 
