@@ -4,22 +4,31 @@
 Les évènements du SSP Lab {% endblock %}
 
 {% block body %}
-<div class = "container-fluid">
-    <div class = "row">
-        <div class = "col">
-            <h1>Index</h1>
-            <p> Bienvenue sur la page des évènements </p>
+
+
+<div class = "row">
+    <div class="col-md-8 card mb-4  mt-3 left  top" disabled>
+        <div class="card-body" disabled>
+                <h1>Bienvenue sur la page des évènements</h1>
+                <p>Le SSP Lab organise différents évènements au cours de l'année. En particulier :
+
+                </p>
+                <p>
+
+                    <ul>
+                        <li><a href = "/seminaires">Des séminaires internes </a>permettant de présenter différents travaux à l'état préliminaire</li>
+                        <li><b><a href = "/seminaires">Des séminaires Big Data </a>rassemblant un public assez large autour d'une thématique données</b></li>
+                        <li><b>Un évènement de formation appelé <a href = "/funathon">Funathon</a></b></li>
+                    </ul>
+                </p>
+                <p>
+                    Une description plus détaillée des différents évènements est présente chaque fois sur la page associée.
+
+                </p>
         </div>
     </div>
-    <p>
-        Le SSP Lab organise différents évènements au cours de l'année. En particulier :
-        <li>
-            <ul><a href = "/seminaires">Des séminaires internes </a>permettant de présenter différents travaux à l'état préliminaire</ul>
-            <ul><a href = "/seminaires">Des séminaires Big Data </a>rassemblant un public assez large autour d'une thématique données</ul>
-            <ul>Un évènement de formation appelé <a href = "/funathon">Funathon</a></ul>
-        </li>
-
-        Une description plus détaillée des différents évènements est présente chaque fois sur la page associée.
-    </p>
+    
 </div>
+
+
 {% endblock %}
