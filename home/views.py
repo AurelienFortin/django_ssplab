@@ -19,3 +19,6 @@ def pres_view(request):
 
 def outils_view(request):
     return render(request, 'home/tools.html')
+
+def funathon_view(request):
+    return render(request, 'home/funathon.html')

@@ -9,5 +9,6 @@ urlpatterns = [
     path('lettres', views.lettres, name = 'lettres'),
     path('team', views.team, name = 'team'),
     path('outils', views.outils, name = 'outils'),
+    path('funathon', views.funathon, name = 'funathon'),
     path('pres', views.pres, name = 'pres'),
 ]
