@@ -12,7 +12,7 @@
 
     <div class="row row-cols-1 row-cols-3 g-4">
 
-        {% for expe in experimentations where expe.date_fin >= LocalDate.now() %}
+        {% for expe in experimentations %}
             <div class = "col">
                 <div class="card h-100 bg-light" style = "width: 22rem; " >
                         <img src="../static/img/{{expe.image_titre}}" class="card-img-top w" alt="...">
@@ -27,11 +27,29 @@
             </div>
         {% endfor %}
 
-
-
     </div>
 
     <h2 class="h1-responsive font-weight-bold my-5">Expérimentations passées du SSP Lab</h2>
+
+
+    <div class="row row-cols-1 row-cols-3 g-4">
+
+        {% for expe in anciennes_experimentations %}
+            <div class = "col">
+                <div class="card h-100 bg-light" style = "width: 22rem; " >
+                        <img src="../static/img/{{expe.image_titre}}" class="card-img-top w" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ expe.title }}</h2>
+                        </div>
+                        <div class = "card-footer">
+
+                            <a href="/expe/experimentation/{{ expe.slug }}" class="btn btn-primary">Suite &rarr;</a>
+                        </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
 
 </section>
 
