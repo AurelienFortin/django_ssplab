@@ -22,3 +22,6 @@ def outils_view(request):
 
 def funathon_view(request):
     return render(request, 'home/funathon.html')
+
+def seminaires_view(request):
+    return render(request, 'home/detail_seminaires.html')
