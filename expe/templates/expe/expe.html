@@ -34,12 +34,13 @@
 
     <div class="row row-cols-1 row-cols-3 g-4">
 
-        {% for anciennes_expe in anciennes_expe %}
+        {% for anciennes_expe in anciennes_experimentations %}
             <div class = "col">
                 <div class="card h-100 bg-light" style = "width: 22rem; " >
                         Bonjour
                         <img src="../static/img/{{anciennes_expe.image_titre}}" class="card-img-top w" alt="...">
                         <div class="card-body">
+                            Bonjour
                             <h2 class="card-title">{{ anciennes_expe.title }}</h2>
                         </div>
                         <div class = "card-footer">
