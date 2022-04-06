@@ -13,7 +13,8 @@
             {% for appui in appuis %}
             <div class = "col">
                 <div class="card h-100 bg-light" style = "width: 22rem; " >
-                        <img src="../static/img/{{ appui.image_titre }}" class="card-img-top w" alt="...">
+                        <!-- <img src="../static/img/{{ appui.image_titre }}" class="card-img-top w" alt="..."> -->
+                        <img src="{{ appui.image_titre }}" class="card-img-top w" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">{{ appui.title }}</h2>
                             <p class="card-text">{{appui.body|slice:":100" |safe }}</p>
@@ -37,7 +38,8 @@
             {% for appui in anciens_appuis %}
             <div class = "col">
                 <div class="card h-100 bg-light" style = "width: 22rem; " >
-                        <img src="../static/img/{{ appui.image_titre }}" class="card-img-top w" alt="...">
+                        <!-- <img src="../static/img/{{ appui.image_titre }}" class="card-img-top w" alt="..."> -->
+                        <img src="{{ appui.image_titre }}" class="card-img-top w" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">{{ appui.title }}</h2>
                             <p class="card-text">{{appui.body|slice:":100" |safe }}</p>
