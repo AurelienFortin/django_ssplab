@@ -40,7 +40,7 @@
         {% for anciennes_expe in anciennes_experimentations %}
             <div class = "col">
                 <div class="card h-100 bg-light" style = "width: 22rem; " >
-                        <img src="{{anciennes_expe.image_titre}}" class="card-img-top w" alt="...">
+                        <a href="/expe/experimentation/{{ anciennes_expe.slug }}" ><img src="{{anciennes_expe.image_titre}}" class="card-img-top w" alt="..."></a>
                         <div class="card-body">
                             <h2 class="card-title">{{ anciennes_expe.title }}</h2>
                         </div>
