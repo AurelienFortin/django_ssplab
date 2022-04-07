@@ -1,39 +1,22 @@
 {% extends 'home/base.html' %} 
 {% load static %}
 {% block title %}
-L'équipe actuelle du SSP 
+Lettres Big Data
 {% endblock %}
-
-{% block styles %}
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-{% endblock %}
-
-
-
 
 {% block body %}
-<!-- Section: Team v.1 -->
-<section class="team-section text-center my-2">
 
-    <!-- Section heading -->
-    <h2 class="h1-responsive font-weight-bold my-5">Comment contacter le SSP Lab ?</h2>
-    <!-- Section description -->
-    <p class="grey-text w-responsive mx-auto mb-5"></p>
-    Pour tout projet innovant au sein du SSP, n'hésitez pas à contacter le SSP Lab, même pour de simples discussions ou conseil. 
-    Pour cela, deux moyens :
-    <p>
-    <ul>
-      <li>Utiliser l'adresse mail suivante : <a href = "mailto:ssplab@insee.Fr">ssplab@insee.fr</a></li>
-      <li>Rejoindre notre canal Slack en cliquant <a href="https://join.slack.com/t/ssplabgroupe/shared_invite/zt-xeyqt2ue-J9x8IACVR9driu45WMClzA">ici</a></li>
-    </ul>
-    </p>
-  
+<div class = "row">
+    <div class="col-md-8 card mb-4  mt-3 left  top" disabled>
+        <div class="card-body" disabled>
+                <h1>Contact</h1>
+                <p>Le SSP Lab est à disposition pour toute question, demande de conseil, demande d'intervention, d'aide directe ou d'appui. Pour nous contacter, n'hésitez pas à utiliser l'adresse suivante : <a href = "mailto:ssplab@insee.fr">ssplab@insee.fr</a>
+                </p>
+               
+        </div>
+    </div>
+    
+</div>
 
 
-  </section>
-
-{% endblock %}
+    {% endblock %}
