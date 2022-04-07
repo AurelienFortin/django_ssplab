@@ -25,3 +25,6 @@ def funathon_view(request):
 
 def seminaires_view(request):
     return render(request, 'home/detail_seminaires.html')
+
+def communaute_view(request):
+    return render(request, 'home/communaute.html')
